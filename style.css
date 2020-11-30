@@ -172,12 +172,10 @@
 
 .ex-13-button:hover .ex-13-top-white {
     animation: rotateup 2s linear;
-    /* background-color: red; */
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
     animation: rotatebot 2s linear;
-    /* background-color: green; */
 }
 
 @keyframes rotateup {
