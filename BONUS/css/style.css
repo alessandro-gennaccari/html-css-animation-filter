@@ -5,7 +5,7 @@
 }
 
 .sfondo {
-    height: 900px;
+    height: 1000px;
     width: 1000px;
     position: relative;
     background-image: url('../img/sm-bg.gif');
@@ -31,7 +31,7 @@
 .mario {
     position: absolute;
     bottom: 10%;
-    left: 0;
+    left: 50px;
 }
 
 .mario:active {
@@ -39,6 +39,6 @@
 }
 
 @keyframes jump {
-    0% {left: 0; bottom: 10%;}
-    50% {left: 0; bottom: 20%;}
+    0% {left: 50px; bottom: 10%;}
+    50% {left: 50px; bottom: 20%;}
 }
