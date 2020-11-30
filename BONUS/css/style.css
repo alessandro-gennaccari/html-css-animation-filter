@@ -7,6 +7,7 @@
 .sfondo {
     height: 900px;
     width: 1000px;
+    position: relative;
     background-image: url('../img/sm-bg.gif');
     background-position: 0px 0px;
     background-size: cover;
@@ -23,4 +24,21 @@
 @keyframes slide {
 	from { background-position: 0 0; }
 	to { background-position: 100% 0; }
+}
+.mario img {
+    height: 35px;
+}
+.mario {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+.mario:active {
+    animation: jump 2s ease-out;
+}
+
+@keyframes jump {
+    0% {left: 0; bottom: 10%;}
+    50% {left: 0; bottom: 20%;}
 }
