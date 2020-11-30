@@ -99,14 +99,27 @@
 
 .ex-10-icon {
     font-size: 60px;
-    transform: rotate(360deg);
-    animation: ;
+    animation: ride 1s linear infinite;
 }
 
+@keyframes ride {
+    0% { transform: rotate(360deg);}
+}
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: turn 3s linear;
+}
+
+@keyframes turn {
+    0% {transform: rotate(0);}
+    90% {transform: rotate(270deg);}
+    100% {transform: rotate(0);}
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -135,4 +148,24 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveup 1s linear;
+}
+
+@keyframes moveup {
+    0% {left: 10%;}
+    50% {left: calc(100% - 60px);}
+    100% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: movebot 1s linear;
+}
+
+@keyframes movebot {
+    0% {right: 20%;}
+    50% {right: calc(100% - 60px);}
+    100% {right: 20%;}
 }
