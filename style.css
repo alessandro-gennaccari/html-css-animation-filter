@@ -169,3 +169,23 @@
     50% {right: calc(100% - 60px);}
     100% {right: 20%;}
 }
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: rotateup 3s linear;
+    background-color: red;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotatebot 4s linear;
+}
+
+@keyframes rotateup {
+    0% {left:10%}
+    50% {left: calc(100% - 60px);}
+    70% {left: calc(100% - 60px); top: 100%;}
+
+}
+
+@keyframes rotatebot  {
+    
+}
