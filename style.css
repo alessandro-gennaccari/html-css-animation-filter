@@ -62,6 +62,27 @@
     width: 500px;
 }
 
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img {
+    transition: 3s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(70%) sepia(60%);
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(70%) sepia(60%);
+    border-radius: 20px;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
